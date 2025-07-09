@@ -140,6 +140,11 @@ header {
   background: $maincolor;
   text-decoration: none;
   font-family: $jost;
+  transition: 0.5s all;
+  &:hover {
+    color: $black;
+    transform: scale(1.02);
+  }
 }
 
 /*/ SECTION 1 /*/
@@ -175,22 +180,47 @@ header {
 
 .left-side-nav {
   padding-bottom: 72px;
+  display: flex;
+  gap: 20px;
 
-  a {
+  .btn {
+    font-family: "jostregular";
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
-    color: #fffffd;
     text-decoration: none;
     border-radius: 8px;
     padding: 12px 40px;
     width: 178px;
     height: 52px;
     transition: 0.5s all;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    &:hover {
-      background: $maincolor;
-    }
+  .btn-primary {
+    background: $maincolor;
+    color: $black;
+  }
+
+  .btn-primary:not(.active) {
+    background: transparent;
+    color: $white;
+    transform: scale(1.02);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: $white;
+    font-family: "jostregular";
+  }
+
+  .btn-secondary.active {
+    background: $maincolor;
+    color: $black;
+    transform: scale(1.02);
   }
 }
 
@@ -204,8 +234,8 @@ header {
     content: "";
     position: absolute;
     left: 116px;
-    top: 31px;
-    width: 45px;
+    top: 46px;
+    width: 76px;
     height: 1px;
     background: $maincolor;
     transform: rotate(90deg);
@@ -215,8 +245,8 @@ header {
     content: "";
     position: absolute;
     left: 300px;
-    top: 31px;
-    width: 45px;
+    top: 46px;
+    width: 76px;
     height: 1px;
     background: $maincolor;
     transform: rotate(90deg);
@@ -275,12 +305,14 @@ header {
     font-size: 16px;
     line-height: 160%;
     color: $maincolor;
+    font-family: $jost;
   }
   p {
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     color: $white;
+    font-family: $jost;
   }
   button {
     border: 1px solid $maincolor;
@@ -296,7 +328,7 @@ header {
   }
   .bid-info-top {
     display: inline-flex;
-    gap: 142px;
+    gap: 118px;
     margin-bottom: 24px;
   }
 }
