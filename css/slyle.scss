@@ -1,0 +1,302 @@
+$maincolor: #d6ef0e;
+$white: #ffffff;
+$black: #1e1e1e;
+$bold: "canela_condensed_trialbold";
+$medium: "canela_condensed_trialmedium";
+$regular: "canela_cond_regular_trialRg";
+$jost: "jostregular";
+
+@font-face {
+  font-family: "canela_condensed_trialbold";
+  src: url("../fonts/canelacondensed-bold-trial-webfont.eot");
+  src: url("../fonts/canelacondensed-bold-trial-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/canelacondensed-bold-trial-webfont.woff2") format("woff2"),
+    url("../fonts/canelacondensed-bold-trial-webfont.woff") format("woff"),
+    url("../fonts/canelacondensed-bold-trial-webfont.ttf") format("truetype"),
+    url("../fonts/canelacondensed-bold-trial-webfont.svg#canela_condensed_trialbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "canela_condensed_trialmedium";
+  src: url("../fonts/canelacondensed-medium-trial-webfont.eot");
+  src: url("../fonts/canelacondensed-medium-trial-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/canelacondensed-medium-trial-webfont.woff2") format("woff2"),
+    url("../fonts/canelacondensed-medium-trial-webfont.woff") format("woff"),
+    url("../fonts/canelacondensed-medium-trial-webfont.ttf") format("truetype"),
+    url("../fonts/canelacondensed-medium-trial-webfont.svg#canela_condensed_trialmedium")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "canela_cond_regular_trialRg";
+  src: url("../fonts/canelacondensed-regular-trial-webfont.eot");
+  src: url("../fonts/canelacondensed-regular-trial-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/canelacondensed-regular-trial-webfont.woff2") format("woff2"),
+    url("../fonts/canelacondensed-regular-trial-webfont.woff") format("woff"),
+    url("../fonts/canelacondensed-regular-trial-webfont.ttf") format("truetype"),
+    url("../fonts/canelacondensed-regular-trial-webfont.svg#canela_cond_regular_trialRg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "jostregular";
+  src: url("../fonts/jost-webfont.eot");
+  src: url("../fonts/jost-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/jost-webfont.woff2") format("woff2"),
+    url("../fonts/jost-webfont.woff") format("woff"),
+    url("../fonts/jost-webfont.ttf") format("truetype"),
+    url("../fonts/jost-webfont.svg#jostregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1512px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*/ HEADER /*/
+
+.container-header {
+  padding: 28px 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  nav {
+    ul {
+      display: inline-flex;
+      justify-content: space-between;
+      gap: 40px;
+
+      li {
+        a {
+          font-family: $jost;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: rgba(255, 255, 253, 0.72);
+          text-decoration: none;
+          position: relative;
+          transition: color 0.3s;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 1px;
+            background-color: $maincolor;
+            transition: width 0.1s;
+          }
+
+          &:hover {
+            color: $white;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: $white;
+  border-radius: 8px;
+  padding: 12px 40px;
+  width: 143px;
+  height: 48px;
+  background: $maincolor;
+  text-decoration: none;
+  font-family: $jost;
+}
+
+/*/ SECTION 1 /*/
+
+.hero-section {
+  padding: 92px 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side-hero {
+  h1 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 120%;
+    color: $white;
+    padding-bottom: 20px;
+  }
+
+  .text-color {
+    color: $maincolor;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $white;
+    padding-bottom: 40px;
+  }
+}
+
+.left-side-nav {
+  padding-bottom: 72px;
+
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #fffffd;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 40px;
+    width: 178px;
+    height: 52px;
+    transition: 0.5s all;
+
+    &:hover {
+      background: $maincolor;
+    }
+  }
+}
+
+.left-side-bottom {
+  display: inline-flex;
+  gap: 94px;
+  position: relative;
+  margin-bottom: 8px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 116px;
+    top: 31px;
+    width: 45px;
+    height: 1px;
+    background: $maincolor;
+    transform: rotate(90deg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 300px;
+    top: 31px;
+    width: 45px;
+    height: 1px;
+    background: $maincolor;
+    transform: rotate(90deg);
+  }
+
+  p {
+    padding-bottom: 0px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+  }
+}
+
+.left-side-bottom-text {
+  display: inline-flex;
+  gap: 137px;
+  p {
+    color: $white;
+    font-family: $jost;
+  }
+}
+
+.right-side-hero {
+  position: relative;
+  .art {
+    position: absolute;
+    z-index: 1;
+    left: -60px;
+    top: 223px;
+  }
+}
+
+/*/&::after {
+    content: "";
+    width: 171.5px;
+    height: 171.59px;
+    background-image: url(../images/art.svg);
+    z-index: 1;
+  }/*/
+
+.bid-info {
+  border-top: 1px solid $maincolor;
+  border-radius: 16px;
+  padding: 20px;
+  width: 304px;
+  height: 169px;
+  box-shadow: 0 9px 50px 0 rgba(23, 36, 65, 0.04);
+  background: #131e3a;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  left: 210px;
+  bottom: 86px;
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $maincolor;
+  }
+  p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $white;
+  }
+  button {
+    border: 1px solid $maincolor;
+    border-radius: 8px;
+    padding: 12px 40px;
+    width: 264px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $maincolor;
+    background: #131e3a;
+  }
+  .bid-info-top {
+    display: inline-flex;
+    gap: 142px;
+    margin-bottom: 24px;
+  }
+}
