@@ -117,9 +117,6 @@ header nav ul li a:hover::after {
   color: #ffffff;
   padding-bottom: 20px;
 }
-.left-side-hero .text-color {
-  color: #d6ef0e;
-}
 .left-side-hero p {
   font-weight: 400;
   font-size: 16px;
@@ -169,6 +166,10 @@ header nav ul li a:hover::after {
   transform: scale(1.02);
 }
 
+.text-color {
+  color: #d6ef0e;
+}
+
 .left-side-bottom {
   display: inline-flex;
   gap: 94px;
@@ -214,6 +215,12 @@ header nav ul li a:hover::after {
 .right-side-hero {
   position: relative;
 }
+.right-side-hero img {
+  transition: 0.3s all;
+}
+.right-side-hero img:hover {
+  transform: scale(1.02);
+}
 .right-side-hero .art {
   position: absolute;
   z-index: 1;
@@ -241,6 +248,10 @@ header nav ul li a:hover::after {
   z-index: 1;
   left: 210px;
   bottom: 86px;
+  transition: 0.3s all;
+}
+.bid-info:hover {
+  transform: scale(1.02);
 }
 .bid-info span {
   font-weight: 400;
@@ -260,7 +271,7 @@ header nav ul li a:hover::after {
   border: 1px solid #d6ef0e;
   border-radius: 8px;
   padding: 12px 40px;
-  width: 264px;
+  width: 100%;
   height: 52px;
   font-weight: 700;
   font-size: 16px;
@@ -269,7 +280,119 @@ header nav ul li a:hover::after {
   background: #131e3a;
 }
 .bid-info .bid-info-top {
-  display: inline-flex;
-  gap: 118px;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 24px;
+}
+
+/*/SECTION2/*/
+.art-of-week-section {
+  padding: 92px 111px;
+}
+
+.art-of-week-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 64px;
+}
+.art-of-week-top h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  color: #fffffd;
+}
+
+.art-of-week-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art-cards {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d6ef0e;
+  border-radius: 28px;
+  padding: 20px;
+  background: #131e3a;
+  transition: 0.3s all;
+}
+.art-cards:hover {
+  transform: scale(1.02);
+}
+.art-cards img {
+  margin-bottom: 24px;
+}
+
+.art-cards-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.art-cards-name p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  position: relative;
+  font-family: "jostregular";
+}
+.art-cards-name p:nth-of-type(2) {
+  font-size: 16px;
+  gap: 8px;
+}
+.art-cards-name p:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/eth.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.art-cards-bid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art-cards-bid-left p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #838382;
+  font-family: "jostregular";
+}
+.art-cards-bid-left span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  font-family: "jostregular";
+  position: relative;
+  margin-left: 30px;
+}
+.art-cards-bid-left span::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/clock.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.art-cards-bid-right button {
+  border: 1px solid #d6ef0e;
+  border-radius: 8px;
+  padding: 12px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #d6ef0e;
+  background: #131e3a;
+  font-family: "jostregular";
 }/*# sourceMappingURL=slyle.css.map */
