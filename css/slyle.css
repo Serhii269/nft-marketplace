@@ -395,4 +395,53 @@ header nav ul li a:hover::after {
   color: #d6ef0e;
   background: #131e3a;
   font-family: "jostregular";
+}
+
+/*/SECTION3/*/
+.sell-nft-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.sell-nft-text h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  color: #fffffd;
+  padding-bottom: 20px;
+}
+.sell-nft-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fffffd;
+  padding-bottom: 40px;
+}
+
+.sell-nft-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 92px 111px;
+  align-items: center;
+  position: relative;
+}
+
+.nft-image-1 {
+  position: absolute;
+  right: 118px;
+  top: 95px;
+  transition: 0.3s all;
+}
+.nft-image-1:hover {
+  transform: scale(1.02);
+}
+
+.nft-image-2 {
+  position: absolute;
+  right: 433px;
+  top: 229px;
+  transition: 0.3s all;
+}
+.nft-image-2:hover {
+  transform: scale(1.02);
 }/*# sourceMappingURL=slyle.css.map */
