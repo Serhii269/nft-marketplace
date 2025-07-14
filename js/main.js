@@ -1,4 +1,4 @@
-// Первая секция (Hero)
+// First section (Hero)
 const heroBtn1 = document.querySelector(".hero-section .btn-primary");
 const heroBtn2 = document.querySelector(".hero-section .btn-secondary");
 
@@ -14,7 +14,7 @@ if (heroBtn1 && heroBtn2) {
   });
 }
 
-// Вторая секция (Sell NFT)
+// Second section (Sell NFT)
 const sellBtn1 = document.querySelector(".sell-nft-section .btn-primary");
 const sellBtn2 = document.querySelector(".sell-nft-section .btn-secondary");
 

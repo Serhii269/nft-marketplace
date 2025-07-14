@@ -67,7 +67,7 @@ $jost: "jostregular";
 }
 
 .container {
-  max-width: 1512px;
+  max-width: 1290px;
   margin: 0 auto;
 }
 
@@ -80,7 +80,8 @@ body {
 /*/ HEADER /*/
 
 .container-header {
-  padding: 28px 111px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,7 +151,11 @@ header {
 /*/ SECTION 1 /*/
 
 .hero-section {
-  padding: 92px 111px;
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,6 +322,13 @@ header {
     color: $maincolor;
     font-family: $jost;
   }
+  .time {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: $white;
+    font-family: $jost;
+  }
   p {
     font-weight: 700;
     font-size: 16px;
@@ -324,7 +336,10 @@ header {
     color: $white;
     font-family: $jost;
   }
-  button {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid $maincolor;
     border-radius: 8px;
     padding: 12px 40px;
@@ -335,6 +350,8 @@ header {
     line-height: 120%;
     color: $maincolor;
     background: #131e3a;
+    text-decoration: none;
+    font-family: $jost;
   }
   .bid-info-top {
     display: flex;
@@ -345,7 +362,7 @@ header {
 /*/SECTION2/*/
 
 .art-of-week-section {
-  padding: 92px 111px;
+  margin-bottom: 184px;
 }
 
 .art-of-week-top {
@@ -424,7 +441,7 @@ header {
     color: #838382;
     font-family: $jost;
   }
-  span {
+  .time2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
@@ -445,7 +462,8 @@ header {
   }
 }
 .art-cards-bid-right {
-  button {
+  a {
+    display: flex;
     border: 1px solid $maincolor;
     border-radius: 8px;
     padding: 12px 40px;
@@ -455,14 +473,20 @@ header {
     color: $maincolor;
     background: #131e3a;
     font-family: $jost;
+    text-decoration: none;
   }
 }
 /*/SECTION3/*/
 
+.sell-nft-section {
+  margin-bottom: 184px;
+}
+
 .sell-nft-text {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 114px;
+  margin-bottom: 94px;
   h2 {
     font-weight: 500;
     font-size: 48px;
@@ -476,21 +500,20 @@ header {
     line-height: 160%;
     color: #fffffd;
     padding-bottom: 40px;
+    font-family: $jost;
   }
 }
-
-.sell-nft-section {
+.sell-nft {
   display: flex;
   justify-content: space-between;
-  padding: 92px 111px;
   align-items: center;
   position: relative;
 }
 
 .nft-image-1 {
   position: absolute;
-  right: 118px;
-  top: 95px;
+  right: 0px;
+  top: 0px;
   transition: 0.3s all;
   &:hover {
     transform: scale(1.02);
@@ -499,10 +522,136 @@ header {
 
 .nft-image-2 {
   position: absolute;
-  right: 433px;
-  top: 229px;
+  right: 323px;
+  top: 161px;
   transition: 0.3s all;
   &:hover {
     transform: scale(1.02);
   }
 }
+
+/*/SECTION4/*/
+
+.popular-artists-section {
+  margin-bottom: 184px;
+}
+
+.popular-artists-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  padding-left: 31px;
+  padding-right: 31px;
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #fffffd;
+  }
+}
+
+.popular-artists-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  a {
+    transition: 0.3s all;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .top-art-1 {
+    position: absolute;
+    top: 345px;
+  }
+  .top-art-2 {
+    position: absolute;
+    top: 345px;
+    left: 439px;
+  }
+}
+
+/*/SECTION5/*/
+
+.contacts-section {
+  margin-bottom: 184px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .contacts-left-side {
+    position: relative;
+    transition: 0.3s all;
+    &:hover {
+      transform: scale(1.02);
+    }
+    .contact-nft-2 {
+      position: absolute;
+      left: 354px;
+      top: 111px;
+    }
+  }
+}
+
+.contacts-right-side {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #fffffd;
+    padding-bottom: 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fffffd;
+    padding-bottom: 40px;
+    font-family: $jost;
+  }
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  .contact-input {
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: 516px;
+    height: 60px;
+    background: #131e3a;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(255, 255, 253, 0.72);
+    border: 1px solid #131e3a;
+    font-family: $jost;
+  }
+  button {
+    position: absolute;
+    right: 0px;
+    border-radius: 8px;
+    padding: 12px 40px;
+    width: 160px;
+    height: 52px;
+    background: #d6ef0e;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #fff;
+    font-family: $jost;
+    transition: 0.5s all;
+    &:hover {
+      color: #1e1e1e;
+      transform: scale(1.02);
+    }
+  }
+}
+/*/FOOTER/*/

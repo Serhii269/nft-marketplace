@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT-Marketplace</title>
-    <link rel="stylesheet" href="css/slyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -30,8 +30,8 @@
     </header>
 
     <main>
-      <section class="container">
-        <div class="hero-section">
+      <section class="hero-section">
+        <div class="container hero">
           <div class="left-side-hero">
             <h1>
               Discover and<br />
@@ -63,27 +63,31 @@
           </div>
 
           <div class="right-side-hero">
-            <img src="images/hero.png" />
+            <img src="images/hero.png" alt="hero-nft" />
             <div class="art"><img src="images/art.png" /></div>
             <div class="bid-info">
               <div class="bid-info-top">
                 <div class="bid-info-top-items">
                   <span>Ends in</span>
-                  <p>05:45:47</p>
+                  <div
+                    class="timer time"
+                    data-start="05:45:47"
+                    id="timer1"
+                  ></div>
                 </div>
                 <div class="bid-info-top-items">
                   <span>Current bid</span>
                   <p>0.24ETH</p>
                 </div>
               </div>
-              <button>Place A Bid</button>
+              <a href="#">Place A Bid</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="container">
-        <div class="art-of-week-section">
+      <section class="art-of-week-section">
+        <div class="container">
           <div class="art-of-week-top">
             <h2>
               <span class="text-color">Amazing</span> and Super<br />
@@ -93,7 +97,7 @@
           </div>
           <div class="art-of-week-bottom">
             <div class="art-cards">
-              <img src="images/unique-art-1.png" />
+              <img src="images/unique-art-1.png" alt="unique-nft-1" />
               <div class="art-cards-name">
                 <p>Cyberpunk Cocomo</p>
                 <p>490ETH</p>
@@ -101,16 +105,20 @@
               <div class="art-cards-bid">
                 <div class="art-cards-bid-left">
                   <p>Ending In</p>
-                  <span>03:24:56</span>
+                  <div
+                    class="timer time2"
+                    data-start="03:24:56"
+                    id="timer2"
+                  ></div>
                 </div>
                 <div class="art-cards-bid-right">
-                  <button>Place A Bid</button>
+                  <a href="#">Place A Bid</a>
                 </div>
               </div>
             </div>
 
             <div class="art-cards">
-              <img src="images/unique-art-2.png" />
+              <img src="images/unique-art-2.png" alt="unique-nft-2" />
               <div class="art-cards-name">
                 <p>Charge, Qi tiao yu</p>
                 <p>490ETH</p>
@@ -118,16 +126,20 @@
               <div class="art-cards-bid">
                 <div class="art-cards-bid-left">
                   <p>Ending In</p>
-                  <span>03:24:56</span>
+                  <div
+                    class="timer time2"
+                    data-start="03:24:56"
+                    id="timer2"
+                  ></div>
                 </div>
                 <div class="art-cards-bid-right">
-                  <button>Place A Bid</button>
+                  <a href="#">Place A Bid</a>
                 </div>
               </div>
             </div>
 
             <div class="art-cards">
-              <img src="images/unique-art-3.png" />
+              <img src="images/unique-art-3.png" alt="unique-nft-3" />
               <div class="art-cards-name">
                 <p>Surgeon, Josh Rife</p>
                 <p>490ETH</p>
@@ -135,10 +147,14 @@
               <div class="art-cards-bid">
                 <div class="art-cards-bid-left">
                   <p>Ending In</p>
-                  <span>03:24:56</span>
+                  <div
+                    class="timer time2"
+                    data-start="03:24:56"
+                    id="timer2"
+                  ></div>
                 </div>
                 <div class="art-cards-bid-right">
-                  <button>Place A Bid</button>
+                  <a href="#">Place A Bid</a>
                 </div>
               </div>
             </div>
@@ -146,8 +162,8 @@
         </div>
       </section>
 
-      <section class="container">
-        <div class="sell-nft-section">
+      <section class="sell-nft-section">
+        <div class="sell-nft container">
           <div class="sell-nft-text">
             <h2>
               Create And Sell <br />Your
@@ -166,8 +182,62 @@
           <div class="nft-image-2"><img src="images/sell-nft-2.png" /></div>
         </div>
       </section>
+
+      <section class="popular-artists-section">
+        <div class="container">
+          <div class="popular-artists-top">
+            <h2>
+              Popular <span class="text-color">Artists</span><br />
+              On This Week
+            </h2>
+            <a href="#" class="contact">See All</a>
+          </div>
+          <div class="popular-artists-bottom">
+            <a href="#"><img src="images/top-art-1.png" /></a>
+            <a href="#"><img src="images/top-art-2.png" /></a>
+            <a href="#"><img src="images/top-art-3.png" /></a>
+            <a href="#" class="top-art-1"><img src="images/top-art-4.png" /></a>
+            <a href="#" class="top-art-2"><img src="images/top-art-5.png" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts-section">
+        <div class="container contacts">
+          <div class="contacts-left-side">
+            <img src="images/contact-nft-1.png" />
+
+            <img class="contact-nft-2" src="images/contact-nft-2.png" />
+          </div>
+          <div class="contacts-right-side">
+            <h2>
+              Subscribe And
+              <span class="text-color"
+                >get our<br />
+                Updates</span
+              >
+              Every Week
+            </h2>
+            <p>
+              We have a blog related to NFT so we can share thoughts and<br />
+              routines on our blog which is updated weekly
+            </p>
+            <form method="post" class="contact-form">
+              <input
+                class="contact-input"
+                type="email"
+                placeholder="Enter your e-mail"
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container"></div>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
   </body>
 </html>

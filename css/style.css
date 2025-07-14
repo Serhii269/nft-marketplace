@@ -33,7 +33,7 @@
 }
 
 .container {
-  max-width: 1512px;
+  max-width: 1290px;
   margin: 0 auto;
 }
 
@@ -45,7 +45,8 @@ body {
 
 /*/ HEADER /*/
 .container-header {
-  padding: 28px 111px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,7 +105,11 @@ header nav ul li a:hover::after {
 
 /*/ SECTION 1 /*/
 .hero-section {
-  padding: 92px 111px;
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -260,6 +265,13 @@ header nav ul li a:hover::after {
   color: #d6ef0e;
   font-family: "jostregular";
 }
+.bid-info .time {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+  font-family: "jostregular";
+}
 .bid-info p {
   font-weight: 700;
   font-size: 16px;
@@ -267,7 +279,10 @@ header nav ul li a:hover::after {
   color: #ffffff;
   font-family: "jostregular";
 }
-.bid-info button {
+.bid-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #d6ef0e;
   border-radius: 8px;
   padding: 12px 40px;
@@ -278,6 +293,8 @@ header nav ul li a:hover::after {
   line-height: 120%;
   color: #d6ef0e;
   background: #131e3a;
+  text-decoration: none;
+  font-family: "jostregular";
 }
 .bid-info .bid-info-top {
   display: flex;
@@ -287,7 +304,7 @@ header nav ul li a:hover::after {
 
 /*/SECTION2/*/
 .art-of-week-section {
-  padding: 92px 111px;
+  margin-bottom: 184px;
 }
 
 .art-of-week-top {
@@ -365,7 +382,7 @@ header nav ul li a:hover::after {
   color: #838382;
   font-family: "jostregular";
 }
-.art-cards-bid-left span {
+.art-cards-bid-left .time2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
@@ -374,7 +391,7 @@ header nav ul li a:hover::after {
   position: relative;
   margin-left: 30px;
 }
-.art-cards-bid-left span::before {
+.art-cards-bid-left .time2::before {
   content: "";
   position: absolute;
   left: -28px;
@@ -385,7 +402,8 @@ header nav ul li a:hover::after {
   background-repeat: no-repeat;
 }
 
-.art-cards-bid-right button {
+.art-cards-bid-right a {
+  display: flex;
   border: 1px solid #d6ef0e;
   border-radius: 8px;
   padding: 12px 40px;
@@ -395,13 +413,19 @@ header nav ul li a:hover::after {
   color: #d6ef0e;
   background: #131e3a;
   font-family: "jostregular";
+  text-decoration: none;
 }
 
 /*/SECTION3/*/
+.sell-nft-section {
+  margin-bottom: 184px;
+}
+
 .sell-nft-text {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 114px;
+  margin-bottom: 94px;
 }
 .sell-nft-text h2 {
   font-weight: 500;
@@ -416,20 +440,20 @@ header nav ul li a:hover::after {
   line-height: 160%;
   color: #fffffd;
   padding-bottom: 40px;
+  font-family: "jostregular";
 }
 
-.sell-nft-section {
+.sell-nft {
   display: flex;
   justify-content: space-between;
-  padding: 92px 111px;
   align-items: center;
   position: relative;
 }
 
 .nft-image-1 {
   position: absolute;
-  right: 118px;
-  top: 95px;
+  right: 0px;
+  top: 0px;
   transition: 0.3s all;
 }
 .nft-image-1:hover {
@@ -438,10 +462,135 @@ header nav ul li a:hover::after {
 
 .nft-image-2 {
   position: absolute;
-  right: 433px;
-  top: 229px;
+  right: 323px;
+  top: 161px;
   transition: 0.3s all;
 }
 .nft-image-2:hover {
   transform: scale(1.02);
-}/*# sourceMappingURL=slyle.css.map */
+}
+
+/*/SECTION4/*/
+.popular-artists-section {
+  margin-bottom: 184px;
+}
+
+.popular-artists-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.popular-artists-top h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  color: #fffffd;
+}
+
+.popular-artists-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+.popular-artists-bottom a {
+  transition: 0.3s all;
+}
+.popular-artists-bottom a:hover {
+  transform: scale(1.02);
+}
+.popular-artists-bottom .top-art-1 {
+  position: absolute;
+  top: 345px;
+}
+.popular-artists-bottom .top-art-2 {
+  position: absolute;
+  top: 345px;
+  left: 439px;
+}
+
+/*/SECTION5/*/
+.contacts-section {
+  margin-bottom: 184px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .contacts-left-side {
+  position: relative;
+  transition: 0.3s all;
+}
+.contacts .contacts-left-side:hover {
+  transform: scale(1.02);
+}
+.contacts .contacts-left-side .contact-nft-2 {
+  position: absolute;
+  left: 354px;
+  top: 111px;
+}
+
+.contacts-right-side {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.contacts-right-side h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  color: #fffffd;
+  padding-bottom: 20px;
+}
+.contacts-right-side p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fffffd;
+  padding-bottom: 40px;
+  font-family: "jostregular";
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+}
+.contact-form .contact-input {
+  border-radius: 8px;
+  padding: 16px 24px;
+  width: 516px;
+  height: 60px;
+  background: #131e3a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(255, 255, 253, 0.72);
+  border: 1px solid #131e3a;
+  font-family: "jostregular";
+}
+.contact-form button {
+  position: absolute;
+  right: 0px;
+  border-radius: 8px;
+  padding: 12px 40px;
+  width: 160px;
+  height: 52px;
+  background: #d6ef0e;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+  font-family: "jostregular";
+  transition: 0.5s all;
+}
+.contact-form button:hover {
+  color: #1e1e1e;
+  transform: scale(1.02);
+}
+
+/*/FOOTER/*//*# sourceMappingURL=style.css.map */
