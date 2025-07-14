@@ -1,52 +1,5 @@
 $maincolor: #d6ef0e;
-$white: #ffffff;
-$black: #1e1e1e;
-$bold: "canela_condensed_trialbold";
-$medium: "canela_condensed_trialmedium";
-$regular: "canela_cond_regular_trialRg";
-$jost: "jostregular";
-
-@font-face {
-  font-family: "canela_condensed_trialbold";
-  src: url("../fonts/canelacondensed-bold-trial-webfont.eot");
-  src: url("../fonts/canelacondensed-bold-trial-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/canelacondensed-bold-trial-webfont.woff2") format("woff2"),
-    url("../fonts/canelacondensed-bold-trial-webfont.woff") format("woff"),
-    url("../fonts/canelacondensed-bold-trial-webfont.ttf") format("truetype"),
-    url("../fonts/canelacondensed-bold-trial-webfont.svg#canela_condensed_trialbold")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "canela_condensed_trialmedium";
-  src: url("../fonts/canelacondensed-medium-trial-webfont.eot");
-  src: url("../fonts/canelacondensed-medium-trial-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/canelacondensed-medium-trial-webfont.woff2") format("woff2"),
-    url("../fonts/canelacondensed-medium-trial-webfont.woff") format("woff"),
-    url("../fonts/canelacondensed-medium-trial-webfont.ttf") format("truetype"),
-    url("../fonts/canelacondensed-medium-trial-webfont.svg#canela_condensed_trialmedium")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "canela_cond_regular_trialRg";
-  src: url("../fonts/canelacondensed-regular-trial-webfont.eot");
-  src: url("../fonts/canelacondensed-regular-trial-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/canelacondensed-regular-trial-webfont.woff2") format("woff2"),
-    url("../fonts/canelacondensed-regular-trial-webfont.woff") format("woff"),
-    url("../fonts/canelacondensed-regular-trial-webfont.ttf") format("truetype"),
-    url("../fonts/canelacondensed-regular-trial-webfont.svg#canela_cond_regular_trialRg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+$mainfont: "jostregular";
 
 @font-face {
   font-family: "jostregular";
@@ -56,6 +9,18 @@ $jost: "jostregular";
     url("../fonts/jost-webfont.woff") format("woff"),
     url("../fonts/jost-webfont.ttf") format("truetype"),
     url("../fonts/jost-webfont.svg#jostregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "jostbold";
+  src: url("../fonts/jost-bold-webfont.eot");
+  src: url("../fonts/jost-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/jost-bold-webfont.woff2") format("woff2"),
+    url("../fonts/jost-bold-webfont.woff") format("woff"),
+    url("../fonts/jost-bold-webfont.ttf") format("truetype"),
+    url("../fonts/jost-bold-webfont.svg#jostbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -96,7 +61,7 @@ header {
 
       li {
         a {
-          font-family: $jost;
+          font-family: $mainfont;
           font-weight: 400;
           font-size: 16px;
           line-height: 160%;
@@ -117,8 +82,7 @@ header {
           }
 
           &:hover {
-            color: $white;
-
+            color: #ffffff;
             &::after {
               width: 100%;
             }
@@ -130,21 +94,26 @@ header {
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
-  color: $white;
+  color: #ffffff;
   border-radius: 8px;
-  padding: 12px 40px;
   width: 143px;
   height: 48px;
   background: $maincolor;
   text-decoration: none;
-  font-family: $jost;
-  transition: 0.5s all;
+  font-family: $mainfont;
+  transition: all 0.3s ease;
   &:hover {
-    color: $black;
+    color: #1e1e1e;
     transform: scale(1.02);
+    font-family: "jostbold";
+    font-size: 15px;
+    opacity: 0.9;
   }
 }
 
@@ -166,16 +135,18 @@ header {
     font-weight: 500;
     font-size: 64px;
     line-height: 120%;
-    color: $white;
+    color: #ffffff;
     padding-bottom: 20px;
+    font-family: "jostbold";
   }
 
   p {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: $white;
+    color: #ffffff;
     padding-bottom: 40px;
+    font-family: $mainfont;
   }
 }
 
@@ -203,24 +174,24 @@ header {
 
   .btn-primary {
     background: $maincolor;
-    color: $black;
+    color: #1e1e1e;
   }
 
   .btn-primary:not(.active) {
     background: transparent;
-    color: $white;
+    color: #ffffff;
     transform: scale(1.02);
   }
 
   .btn-secondary {
     background: transparent;
-    color: $white;
+    color: #ffffff;
     font-family: "jostregular";
   }
 
   .btn-secondary.active {
     background: $maincolor;
-    color: $black;
+    color: #1e1e1e;
     transform: scale(1.02);
   }
 }
@@ -269,8 +240,8 @@ header {
   display: inline-flex;
   gap: 137px;
   p {
-    color: $white;
-    font-family: $jost;
+    color: #ffffff;
+    font-family: $mainfont;
   }
 }
 
@@ -320,21 +291,21 @@ header {
     font-size: 16px;
     line-height: 160%;
     color: $maincolor;
-    font-family: $jost;
+    font-family: $mainfont;
   }
   .time {
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
-    color: $white;
-    font-family: $jost;
+    color: #ffffff;
+    font-family: $mainfont;
   }
   p {
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
-    color: $white;
-    font-family: $jost;
+    color: #ffffff;
+    font-family: $mainfont;
   }
   a {
     display: flex;
@@ -351,7 +322,7 @@ header {
     color: $maincolor;
     background: #131e3a;
     text-decoration: none;
-    font-family: $jost;
+    font-family: $mainfont;
   }
   .bid-info-top {
     display: flex;
@@ -375,6 +346,7 @@ header {
     font-size: 48px;
     line-height: 120%;
     color: #fffffd;
+    font-family: "jostbold";
   }
 }
 
@@ -408,9 +380,9 @@ header {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    color: $white;
+    color: #ffffff;
     position: relative;
-    font-family: $jost;
+    font-family: $mainfont;
     &:nth-of-type(2) {
       font-size: 16px;
       gap: 8px;
@@ -439,14 +411,14 @@ header {
     font-size: 14px;
     line-height: 160%;
     color: #838382;
-    font-family: $jost;
+    font-family: $mainfont;
   }
   .time2 {
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
-    color: $white;
-    font-family: $jost;
+    color: #ffffff;
+    font-family: $mainfont;
     position: relative;
     margin-left: 30px;
     &::before {
@@ -472,7 +444,7 @@ header {
     line-height: 120%;
     color: $maincolor;
     background: #131e3a;
-    font-family: $jost;
+    font-family: $mainfont;
     text-decoration: none;
   }
 }
@@ -493,6 +465,7 @@ header {
     line-height: 120%;
     color: #fffffd;
     padding-bottom: 20px;
+    font-family: "jostbold";
   }
   p {
     font-weight: 400;
@@ -500,7 +473,7 @@ header {
     line-height: 160%;
     color: #fffffd;
     padding-bottom: 40px;
-    font-family: $jost;
+    font-family: $mainfont;
   }
 }
 .sell-nft {
@@ -548,6 +521,7 @@ header {
     font-size: 48px;
     line-height: 120%;
     color: #fffffd;
+    font-family: "jostbold";
   }
 }
 
@@ -607,6 +581,7 @@ header {
     line-height: 120%;
     color: #fffffd;
     padding-bottom: 20px;
+    font-family: "jostbold";
   }
   p {
     font-weight: 400;
@@ -614,7 +589,7 @@ header {
     line-height: 160%;
     color: #fffffd;
     padding-bottom: 40px;
-    font-family: $jost;
+    font-family: $mainfont;
   }
 }
 
@@ -632,13 +607,15 @@ header {
     line-height: 160%;
     color: rgba(255, 255, 253, 0.72);
     border: 1px solid #131e3a;
-    font-family: $jost;
+    font-family: $mainfont;
   }
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0px;
     border-radius: 8px;
-    padding: 12px 40px;
     width: 160px;
     height: 52px;
     background: #d6ef0e;
@@ -646,12 +623,142 @@ header {
     font-size: 16px;
     line-height: 120%;
     color: #fff;
-    font-family: $jost;
-    transition: 0.5s all;
+    font-family: $mainfont;
+    transition: 0.3s all ease;
     &:hover {
       color: #1e1e1e;
       transform: scale(1.02);
+      font-family: "jostbold";
+      font-size: 15px;
+      opacity: 0.9;
     }
   }
 }
 /*/FOOTER/*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #838382;
+  padding: 0px 0px 48px 0px;
+  width: 100%;
+  height: 224px;
+  margin-bottom: 48px;
+  margin-left: 18.5px;
+  margin-right: 18.5px;
+}
+.footer-left-side {
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fffffd;
+    font-family: $mainfont;
+    margin-bottom: 24px;
+  }
+}
+.social-media {
+  ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    li {
+      a {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        transition: background-image 0.4s;
+        transition: 0.4s all;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &.facebook {
+          background-image: url("../images/facebook.svg");
+          &:hover {
+            background-image: url("../images/facebook-hover.svg");
+          }
+        }
+        &.telegram {
+          background-image: url("../images/telegram.svg");
+          &:hover {
+            background-image: url("../images/telegram-hover.svg");
+          }
+        }
+        &.twitter {
+          background-image: url("../images/twitter.svg");
+          &:hover {
+            background-image: url("../images/twitter-hover.svg");
+          }
+        }
+        &.in {
+          background-image: url("../images/in.svg");
+          &:hover {
+            background-image: url("../images/in-hover.svg");
+          }
+        }
+      }
+    }
+  }
+}
+.footer-right-side {
+  display: flex;
+  justify-content: space-between;
+  gap: 94px;
+}
+
+.footer-right-side-nav {
+  ul {
+    list-style: none;
+    li {
+      &:first-child {
+        padding-bottom: 24px;
+        font-family: "jostbold";
+      }
+      padding-bottom: 8px;
+      a {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #fffffd;
+        text-decoration: none;
+        transition: 0.3s all ease;
+        font-family: "jostregular";
+        &:hover {
+          color: #d6ef0e;
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}
+
+.title-nav {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 92px;
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #fffffd;
+    font-family: "jostregular";
+  }
+}
+
+.footer-bottom-right {
+  display: inline-flex;
+  gap: 28px;
+}

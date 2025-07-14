@@ -1,28 +1,14 @@
 @font-face {
-  font-family: "canela_condensed_trialbold";
-  src: url("../fonts/canelacondensed-bold-trial-webfont.eot");
-  src: url("../fonts/canelacondensed-bold-trial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/canelacondensed-bold-trial-webfont.woff2") format("woff2"), url("../fonts/canelacondensed-bold-trial-webfont.woff") format("woff"), url("../fonts/canelacondensed-bold-trial-webfont.ttf") format("truetype"), url("../fonts/canelacondensed-bold-trial-webfont.svg#canela_condensed_trialbold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "canela_condensed_trialmedium";
-  src: url("../fonts/canelacondensed-medium-trial-webfont.eot");
-  src: url("../fonts/canelacondensed-medium-trial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/canelacondensed-medium-trial-webfont.woff2") format("woff2"), url("../fonts/canelacondensed-medium-trial-webfont.woff") format("woff"), url("../fonts/canelacondensed-medium-trial-webfont.ttf") format("truetype"), url("../fonts/canelacondensed-medium-trial-webfont.svg#canela_condensed_trialmedium") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "canela_cond_regular_trialRg";
-  src: url("../fonts/canelacondensed-regular-trial-webfont.eot");
-  src: url("../fonts/canelacondensed-regular-trial-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/canelacondensed-regular-trial-webfont.woff2") format("woff2"), url("../fonts/canelacondensed-regular-trial-webfont.woff") format("woff"), url("../fonts/canelacondensed-regular-trial-webfont.ttf") format("truetype"), url("../fonts/canelacondensed-regular-trial-webfont.svg#canela_cond_regular_trialRg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "jostregular";
   src: url("../fonts/jost-webfont.eot");
   src: url("../fonts/jost-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/jost-webfont.woff2") format("woff2"), url("../fonts/jost-webfont.woff") format("woff"), url("../fonts/jost-webfont.ttf") format("truetype"), url("../fonts/jost-webfont.svg#jostregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jostbold";
+  src: url("../fonts/jost-bold-webfont.eot");
+  src: url("../fonts/jost-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/jost-bold-webfont.woff2") format("woff2"), url("../fonts/jost-bold-webfont.woff") format("woff"), url("../fonts/jost-bold-webfont.ttf") format("truetype"), url("../fonts/jost-bold-webfont.svg#jostbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -85,22 +71,27 @@ header nav ul li a:hover::after {
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 120%;
   color: #ffffff;
   border-radius: 8px;
-  padding: 12px 40px;
   width: 143px;
   height: 48px;
   background: #d6ef0e;
   text-decoration: none;
   font-family: "jostregular";
-  transition: 0.5s all;
+  transition: all 0.3s ease;
 }
 .contact:hover {
   color: #1e1e1e;
   transform: scale(1.02);
+  font-family: "jostbold";
+  font-size: 15px;
+  opacity: 0.9;
 }
 
 /*/ SECTION 1 /*/
@@ -121,6 +112,7 @@ header nav ul li a:hover::after {
   line-height: 120%;
   color: #ffffff;
   padding-bottom: 20px;
+  font-family: "jostbold";
 }
 .left-side-hero p {
   font-weight: 400;
@@ -128,6 +120,7 @@ header nav ul li a:hover::after {
   line-height: 160%;
   color: #ffffff;
   padding-bottom: 40px;
+  font-family: "jostregular";
 }
 
 .left-side-nav {
@@ -318,6 +311,7 @@ header nav ul li a:hover::after {
   font-size: 48px;
   line-height: 120%;
   color: #fffffd;
+  font-family: "jostbold";
 }
 
 .art-of-week-bottom {
@@ -433,6 +427,7 @@ header nav ul li a:hover::after {
   line-height: 120%;
   color: #fffffd;
   padding-bottom: 20px;
+  font-family: "jostbold";
 }
 .sell-nft-text p {
   font-weight: 400;
@@ -488,6 +483,7 @@ header nav ul li a:hover::after {
   font-size: 48px;
   line-height: 120%;
   color: #fffffd;
+  font-family: "jostbold";
 }
 
 .popular-artists-bottom {
@@ -546,6 +542,7 @@ header nav ul li a:hover::after {
   line-height: 120%;
   color: #fffffd;
   padding-bottom: 20px;
+  font-family: "jostbold";
 }
 .contacts-right-side p {
   font-weight: 400;
@@ -574,10 +571,12 @@ header nav ul li a:hover::after {
   font-family: "jostregular";
 }
 .contact-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 0px;
   border-radius: 8px;
-  padding: 12px 40px;
   width: 160px;
   height: 52px;
   background: #d6ef0e;
@@ -586,11 +585,135 @@ header nav ul li a:hover::after {
   line-height: 120%;
   color: #fff;
   font-family: "jostregular";
-  transition: 0.5s all;
+  transition: 0.3s all ease;
 }
 .contact-form button:hover {
   color: #1e1e1e;
   transform: scale(1.02);
+  font-family: "jostbold";
+  font-size: 15px;
+  opacity: 0.9;
 }
 
-/*/FOOTER/*//*# sourceMappingURL=style.css.map */
+/*/FOOTER/*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #838382;
+  padding: 0px 0px 48px 0px;
+  width: 100%;
+  height: 224px;
+  margin-bottom: 48px;
+  margin-left: 18.5px;
+  margin-right: 18.5px;
+}
+
+.footer-left-side p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fffffd;
+  font-family: "jostregular";
+  margin-bottom: 24px;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+.social-media ul li a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  transition: background-image 0.4s;
+  transition: 0.4s all;
+}
+.social-media ul li a:hover {
+  transform: scale(1.1);
+}
+.social-media ul li a.facebook {
+  background-image: url("../images/facebook.svg");
+}
+.social-media ul li a.facebook:hover {
+  background-image: url("../images/facebook-hover.svg");
+}
+.social-media ul li a.telegram {
+  background-image: url("../images/telegram.svg");
+}
+.social-media ul li a.telegram:hover {
+  background-image: url("../images/telegram-hover.svg");
+}
+.social-media ul li a.twitter {
+  background-image: url("../images/twitter.svg");
+}
+.social-media ul li a.twitter:hover {
+  background-image: url("../images/twitter-hover.svg");
+}
+.social-media ul li a.in {
+  background-image: url("../images/in.svg");
+}
+.social-media ul li a.in:hover {
+  background-image: url("../images/in-hover.svg");
+}
+
+.footer-right-side {
+  display: flex;
+  justify-content: space-between;
+  gap: 94px;
+}
+
+.footer-right-side-nav ul {
+  list-style: none;
+}
+.footer-right-side-nav ul li {
+  padding-bottom: 8px;
+}
+.footer-right-side-nav ul li:first-child {
+  padding-bottom: 24px;
+  font-family: "jostbold";
+}
+.footer-right-side-nav ul li a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fffffd;
+  text-decoration: none;
+  transition: 0.3s all ease;
+  font-family: "jostregular";
+}
+.footer-right-side-nav ul li a:hover {
+  color: #d6ef0e;
+  transform: scale(1.03);
+}
+
+.title-nav {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 92px;
+}
+.footer-bottom p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #fffffd;
+  font-family: "jostregular";
+}
+
+.footer-bottom-right {
+  display: inline-flex;
+  gap: 28px;
+}/*# sourceMappingURL=style.css.map */
