@@ -1,7 +1,27 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1290px) {
   .container-header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer {
+    width: auto;
+  }
+  .footer-bottom {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .bid-info {
+    left: 150px;
+    bottom: 93px;
+  }
+  .popular-artists-bottom {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-header {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .hero-section {
     margin-top: 30px;
@@ -30,11 +50,11 @@
   }
   .art-of-week-bottom {
     flex-direction: column;
-    gap: 16px;
+    gap: 30px;
     align-items: center;
   }
   .art-cards {
-    width: 85%;
+    width: 80%;
   }
   .sell-nft {
     flex-direction: column;
@@ -85,7 +105,169 @@
   }
   .footer {
     display: flex;
-    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+  }
+  .left-side-bottom-text p {
+    padding-bottom: 2px;
+  }
+  .right-side-hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .art-of-week-section {
+    margin-bottom: 10px;
+  }
+  .nft-image-1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .nft-image-2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .sell-nft-text {
+    margin-bottom: 40px;
+  }
+  .popular-artists-top {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .popular-artists-top h2 {
+    padding-bottom: 10px;
+  }
+  .popular-artists-bottom {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .popular-artists-bottom img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .contacts-left-side img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .sell-nft-section {
+    margin-bottom: 100px;
+  }
+  .popular-artists-section {
+    margin-bottom: 130px;
+  }
+  .contacts-section {
+    margin-bottom: 65px;
+  }
+  .social-media {
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    margin-bottom: 50px;
+  }
+  .contacts-left-side .contact-nft-2 {
+    display: none;
+  }
+  .left-side-hero {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-section {
+    margin-top: 30px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .left-side-nav {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .art-of-week-top {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .art-of-week-top h2 {
+    padding-bottom: 10px;
+  }
+  .art-of-week-section {
+    margin-bottom: 10px;
+  }
+  .art-of-week-bottom {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .art-cards {
+    width: 85%;
+  }
+  .sell-nft {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .nft-image-1,
+  .nft-image-2 {
+    position: static;
+    margin-top: 20px;
+  }
+  .popular-artists-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular-artists-bottom .top-art-1,
+  .popular-artists-bottom .top-art-2 {
+    position: static;
+  }
+  .contacts {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .contact-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-form .contact-input,
+  .contact-form button {
+    width: 100%;
+    position: static;
+  }
+  .contacts-right-side {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer-right-side {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-left-side p {
+    font-size: 14px;
+  }
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
   }
   .left-side-bottom-text p {
     padding-bottom: 2px;
@@ -190,19 +372,19 @@
     transform: rotate(-45deg) translateY(-8px);
   }
   .container-header {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
   .hero-section {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   header nav ul {
     flex-direction: column;
     gap: 12px;
   }
   .contact {
-    width: 120px;
-    height: 44px;
+    width: 110px;
+    height: 34px;
   }
   .hero {
     flex-direction: column;
@@ -244,7 +426,7 @@
   }
   .art-of-week-bottom {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     align-items: center;
   }
   .art-cards {
@@ -322,8 +504,8 @@
   .art-of-week-top {
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .art-of-week-top h2 {
     font-size: 20px;
