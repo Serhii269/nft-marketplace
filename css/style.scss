@@ -58,7 +58,9 @@ header {
       display: inline-flex;
       justify-content: space-between;
       gap: 40px;
-
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
       li {
         a {
           font-family: $mainfont;
@@ -670,7 +672,7 @@ header {
         height: 24px;
         background-size: cover;
         transition: background-image 0.4s;
-        transition: 0.4s all;
+        transition: 0.2s all;
         &:hover {
           transform: scale(1.1);
         }
@@ -724,7 +726,7 @@ header {
         line-height: 160%;
         color: #fffffd;
         text-decoration: none;
-        transition: 0.3s all ease;
+        transition: 0.2s all ease;
         font-family: "jostregular";
         &:hover {
           color: #d6ef0e;
@@ -761,4 +763,31 @@ header {
 .footer-bottom-right {
   display: inline-flex;
   gap: 28px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+
+  li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
 }

@@ -42,6 +42,9 @@ header nav ul {
   display: inline-flex;
   justify-content: space-between;
   gap: 40px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 header nav ul li a {
   font-family: "jostregular";
@@ -629,7 +632,7 @@ header nav ul li a:hover::after {
   height: 24px;
   background-size: cover;
   transition: background-image 0.4s;
-  transition: 0.4s all;
+  transition: 0.2s all;
 }
 .social-media ul li a:hover {
   transform: scale(1.1);
@@ -682,7 +685,7 @@ header nav ul li a:hover::after {
   line-height: 160%;
   color: #fffffd;
   text-decoration: none;
-  transition: 0.3s all ease;
+  transition: 0.2s all ease;
   font-family: "jostregular";
 }
 .footer-right-side-nav ul li a:hover {
@@ -716,4 +719,29 @@ header nav ul li a:hover::after {
 .footer-bottom-right {
   display: inline-flex;
   gap: 28px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+}
+.burger-menu span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s ease;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,448 @@
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .container-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-section {
+    margin-top: 30px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .left-side-nav {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .art-of-week-top {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    h2 {
+      padding-bottom: 10px;
+    }
+  }
+  .art-of-week-section {
+    margin-bottom: 10px;
+  }
+  .art-of-week-bottom {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .art-cards {
+    width: 85%;
+  }
+
+  .sell-nft {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .nft-image-1,
+  .nft-image-2 {
+    position: static;
+    margin-top: 12px;
+  }
+
+  .popular-artists-bottom {
+    flex-direction: column;
+    align-items: center;
+
+    .top-art-1,
+    .top-art-2 {
+      position: static;
+    }
+  }
+
+  .contacts {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    gap: 10px;
+
+    .contact-input,
+    button {
+      width: 100%;
+      position: static;
+    }
+  }
+
+  .contacts-right-side {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-right-side {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-left-side {
+    p {
+      font-size: 14px;
+    }
+  }
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .left-side-bottom-text p {
+    padding-bottom: 2px;
+  }
+  .right-side-hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .art-of-week-section {
+    margin-bottom: 10px;
+  }
+  .nft-image-1 {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .nft-image-2 {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .sell-nft-text {
+    margin-bottom: 40px;
+  }
+  .popular-artists-top {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    h2 {
+      padding-bottom: 10px;
+    }
+  }
+  .popular-artists-bottom {
+    padding-left: 5px;
+    padding-right: 5px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .contacts-left-side {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .sell-nft-section {
+    margin-bottom: 100px;
+  }
+  .popular-artists-section {
+    margin-bottom: 130px;
+  }
+  .contacts-section {
+    margin-bottom: 65px;
+  }
+  .social-media {
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    margin-bottom: 50px;
+  }
+  .contacts-left-side .contact-nft-2 {
+    display: none;
+  }
+  .left-side-hero {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .burger-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .burger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  .container-header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .hero-section {
+    margin-top: 50px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact {
+    width: 120px;
+    height: 44px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .left-side-hero h1 {
+    font-size: 28px;
+  }
+
+  .left-side-hero p {
+    font-size: 13px;
+  }
+
+  .left-side-nav {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .left-side-bottom {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .left-side-bottom-text {
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+  }
+
+  .right-side-hero .art {
+    display: none;
+  }
+
+  .bid-info {
+    position: static;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .art-of-week-bottom {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .art-cards {
+    width: 100%;
+  }
+
+  .sell-nft {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .sell-nft-text h2 {
+    font-size: 24px;
+  }
+
+  .nft-image-1,
+  .nft-image-2 {
+    position: static;
+    margin-top: 12px;
+  }
+
+  .popular-artists-bottom {
+    flex-direction: column;
+    align-items: center;
+
+    .top-art-1,
+    .top-art-2 {
+      position: static;
+    }
+  }
+
+  .contacts {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    gap: 10px;
+
+    .contact-input,
+    button {
+      width: 100%;
+      position: static;
+    }
+  }
+
+  .contacts-right-side {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contacts-left-side .contact-nft-2 {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+    width: auto;
+  }
+
+  .footer-right-side,
+  .footer-bottom,
+  .footer-bottom-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .left-side-bottom::before,
+  .left-side-bottom::after {
+    content: "";
+    display: none;
+  }
+  .left-side-bottom-text p {
+    padding-bottom: 2px;
+  }
+  .right-side-hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .art-of-week-top {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    h2 {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  .art-of-week-section {
+    margin-bottom: 10px;
+  }
+  .nft-image-1 {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .nft-image-2 {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .sell-nft-text {
+    margin-bottom: 40px;
+  }
+  .popular-artists-top {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    h2 {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  .popular-artists-bottom {
+    padding-left: 5px;
+    padding-right: 5px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .contacts-left-side {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .sell-nft-section {
+    margin-bottom: 100px;
+  }
+  .popular-artists-section {
+    margin-bottom: 130px;
+  }
+  .contacts-section {
+    margin-bottom: 65px;
+  }
+  .social-media {
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    margin-bottom: 50px;
+  }
+}
