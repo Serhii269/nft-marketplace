@@ -229,13 +229,6 @@ header nav ul li a:hover::after {
   top: 223px;
 }
 
-/*/&::after {
-    content: "";
-    width: 171.5px;
-    height: 171.59px;
-    background-image: url(../images/art.svg);
-    z-index: 1;
-  }/*/
 .bid-info {
   border-top: 1px solid #d6ef0e;
   border-radius: 16px;

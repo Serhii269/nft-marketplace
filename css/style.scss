@@ -158,7 +158,7 @@ header {
   gap: 20px;
 
   .btn {
-    font-family: "jostregular";
+    font-family: $mainfont;
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
@@ -188,7 +188,7 @@ header {
   .btn-secondary {
     background: transparent;
     color: #ffffff;
-    font-family: "jostregular";
+    font-family: $mainfont;
   }
 
   .btn-secondary.active {
@@ -262,14 +262,6 @@ header {
     top: 223px;
   }
 }
-
-/*/&::after {
-    content: "";
-    width: 171.5px;
-    height: 171.59px;
-    background-image: url(../images/art.svg);
-    z-index: 1;
-  }/*/
 
 .bid-info {
   border-top: 1px solid $maincolor;
@@ -620,7 +612,7 @@ header {
     border-radius: 8px;
     width: 160px;
     height: 52px;
-    background: #d6ef0e;
+    background: $maincolor;
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
@@ -727,9 +719,9 @@ header {
         color: #fffffd;
         text-decoration: none;
         transition: 0.2s all ease;
-        font-family: "jostregular";
+        font-family: $mainfont;
         &:hover {
-          color: #d6ef0e;
+          color: $maincolor;
           transform: scale(1.03);
         }
       }
@@ -756,7 +748,7 @@ header {
     line-height: 160%;
     text-align: center;
     color: #fffffd;
-    font-family: "jostregular";
+    font-family: $mainfont;
   }
 }
 
@@ -765,15 +757,18 @@ header {
   gap: 28px;
 }
 
-.main-nav ul {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-
-  li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
+.main-nav {
+  ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
   }
 }
 

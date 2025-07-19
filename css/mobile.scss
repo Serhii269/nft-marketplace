@@ -17,6 +17,42 @@
   .popular-artists-bottom {
     flex-wrap: nowrap;
   }
+
+  .hero {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .art-of-week-top {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .art-of-week-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .nft-image-2 {
+    right: 212px;
+  }
+  .sell-nft {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .popular-artists-bottom {
+    flex-direction: column;
+    align-items: center;
+
+    .top-art-1,
+    .top-art-2 {
+      position: static;
+    }
+  }
+  .contact-nft-2 {
+    content: "";
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -53,6 +89,8 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 
   .art-cards {
@@ -123,13 +161,17 @@
     width: auto;
   }
 
-  .left-side-bottom-text p {
-    padding-bottom: 2px;
+  .left-side-bottom-text {
+    p {
+      padding-bottom: 2px;
+    }
   }
-  .right-side-hero img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  .right-side-hero {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 
   .art-of-week-section {
@@ -198,6 +240,10 @@
   .left-side-hero {
     margin-bottom: 50px;
   }
+  .bid-info {
+    left: 210px;
+    bottom: 86px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -234,6 +280,8 @@
     flex-direction: column;
     gap: 25px;
     align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .art-cards {
@@ -304,13 +352,17 @@
     width: auto;
   }
 
-  .left-side-bottom-text p {
-    padding-bottom: 2px;
+  .left-side-bottom-text {
+    p {
+      padding-bottom: 2px;
+    }
   }
-  .right-side-hero img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  .right-side-hero {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 
   .art-of-week-section {
@@ -429,9 +481,13 @@
     margin-top: 20px;
   }
 
-  header nav ul {
-    flex-direction: column;
-    gap: 12px;
+  header {
+    nav {
+      ul {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
   }
 
   .contact {
@@ -445,12 +501,16 @@
     padding: 20px;
   }
 
-  .left-side-hero h1 {
-    font-size: 28px;
+  .left-side-hero {
+    h1 {
+      font-size: 28px;
+    }
   }
 
-  .left-side-hero p {
-    font-size: 13px;
+  .left-side-hero {
+    p {
+      font-size: 13px;
+    }
   }
 
   .left-side-nav {
@@ -489,6 +549,8 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .art-cards {
@@ -502,8 +564,10 @@
     padding: 20px;
   }
 
-  .sell-nft-text h2 {
-    font-size: 24px;
+  .sell-nft-text {
+    h2 {
+      font-size: 24px;
+    }
   }
 
   .nft-image-1,
@@ -567,13 +631,17 @@
     content: "";
     display: none;
   }
-  .left-side-bottom-text p {
-    padding-bottom: 2px;
+  .left-side-bottom-text {
+    p {
+      padding-bottom: 2px;
+    }
   }
-  .right-side-hero img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  .right-side-hero {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   }
   .art-of-week-top {
     display: flex;
@@ -645,5 +713,10 @@
   }
   .footer-bottom {
     margin-bottom: 50px;
+  }
+  .art-cards-name {
+    p {
+      font-size: 20px;
+    }
   }
 }
