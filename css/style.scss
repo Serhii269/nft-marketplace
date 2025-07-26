@@ -40,6 +40,11 @@ body {
   background-image: url("../images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: url("../images/cursor.png") 10 10, auto;
+}
+
+a {
+  cursor: url("../images/cursor2.png") 10 10, auto;
 }
 
 /*/ HEADER /*/
