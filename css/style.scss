@@ -791,3 +791,52 @@ header {
     transition: 0.3s ease;
   }
 }
+
+/*/PRELOADER/*/
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #1dad6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidePreloader 4s forwards;
+}
+
+@keyframes hidePreloader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.loader {
+  width: fit-content;
+  font-size: 60px;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  background: conic-gradient(#000 0 0) 0/1ch 100% no-repeat text;
+  animation: l14 2s steps(7, jump-none) infinite alternate;
+}
+.loader:before {
+  content: "Welcome to NFT-Marketplace";
+}
+
+@keyframes l14 {
+  to {
+    background-position: 100%;
+  }
+}
