@@ -217,6 +217,10 @@
     left: 210px;
     bottom: 86px;
   }
+  .loader {
+    font-size: 45px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .container-header {
@@ -378,6 +382,10 @@
   }
   .left-side-hero {
     margin-bottom: 50px;
+  }
+  .loader {
+    font-size: 40px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -612,5 +620,9 @@
   }
   .art-cards-name p {
     font-size: 20px;
+  }
+  .loader {
+    font-size: 32px;
+    text-align: center;
   }
 }/*# sourceMappingURL=mobile.css.map */

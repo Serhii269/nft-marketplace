@@ -753,6 +753,7 @@ header nav ul li a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   animation: hidePreloader 4s forwards;
 }
 
